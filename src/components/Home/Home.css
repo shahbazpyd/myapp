@@ -1,0 +1,95 @@
+/* ===== Container ===== */
+/* .container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  background: #f4f6f9;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.home-cards {
+  width: 100%;
+  max-width: 80%;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.home-cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove default anchor style */
+.home-cards a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px;
+}
+
+/* ===== Course Name ===== */
+.course-name p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* ===== Course Image ===== */
+.course-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.course-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Course Details ===== */
+.course-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* ===== Fees & Duration Row ===== */
+.course-fees p,
+.course-duration p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 4px 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .cards {
+    width: 100%;
+  }
+}
