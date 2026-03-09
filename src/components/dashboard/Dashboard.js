@@ -233,7 +233,7 @@ function Dashboard() {
               ))
             ) : (
               <tr>
-                <td colSpan="3">No Course Available</td>
+                <td colSpan="3">No Students Available</td>
               </tr>
             )}
           </tbody>
